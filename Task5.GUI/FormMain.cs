@@ -78,15 +78,19 @@ namespace Task5.GUI
         {
             richTextBoxResults.Clear();
 
+            StringBuilder sb = new StringBuilder(array.Length);
+
             for (int i = 0; i < array.Length; i++)
             {
-                richTextBoxResults.Text += array[i].ToString() + " ";
+                sb.Append(array[i].ToString());
+                sb.Append(" ");
 
                 if ((i % 10 == 0) && (i > 0))
-                    richTextBoxResults.Text += Environment.NewLine;
+                    sb.Append(Environment.NewLine);
             }
 
-            richTextBoxResults.Text += Environment.NewLine;
+            sb.Append(Environment.NewLine);
+            richTextBoxResults.Text = sb.ToString();
         }
 
         private void buttonCreateArray_Click(object sender, EventArgs e)
