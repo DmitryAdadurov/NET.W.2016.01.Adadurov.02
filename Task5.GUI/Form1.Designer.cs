@@ -1,6 +1,6 @@
 ﻿namespace Task5.GUI
 {
-    partial class Form1
+    partial class FormMain
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -129,7 +129,7 @@
             this.buttonOpenFile.UseVisualStyleBackColor = true;
             this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
             // 
-            // Form1
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -137,7 +137,7 @@
             this.Controls.Add(this.groupBoxOpenFile);
             this.Controls.Add(this.groupBoxResult);
             this.Controls.Add(this.groupBoxArrayCreate);
-            this.Name = "Form1";
+            this.Name = "FormMain";
             this.Text = "Task 5";
             this.groupBoxArrayCreate.ResumeLayout(false);
             this.groupBoxArrayCreate.PerformLayout();
