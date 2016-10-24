@@ -10,16 +10,24 @@ namespace Task7.Logic
 {
     public class IntInsertion
     {
+        /// <summary>
+        /// Insert bits of the one integer to another
+        /// </summary>
+        /// <param name="num1">First integer</param>
+        /// <param name="num2">Second integer</param>
+        /// <param name="i">"From" position (from right to left)</param>
+        /// <param name="j">"To" position (from right to left)</param>
+        /// <returns>Resulting integer</returns>
         public static int BitInsertion(int num1, int num2, int i, int j)
         {
             BitArray b1 = new BitArray(BitConverter.GetBytes(num1));
             BitArray b2 = new BitArray(BitConverter.GetBytes(num2));
 
-            int l = 31;
+            int l = 0;
 
             for (; i <= j; i++)
             {
-                b1[i] = b2[l--];
+                b1[i] = b2[l++];
             }
 
             int[] array = new int[1];

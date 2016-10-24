@@ -19,7 +19,12 @@ namespace Task7.GUI
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Task7.Logic.IntInsertion.BitInsertion(15, int.MaxValue, 3, 5);
+            
         }
     }
+
+
+ 
+    
+
 }

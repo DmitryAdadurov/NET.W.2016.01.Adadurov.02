@@ -9,6 +9,12 @@ namespace Task5.Logic
 {
     public class ArrayFill
     {
+
+        /// <summary>
+        /// Read linen from text file and parse them
+        /// </summary>
+        /// <param name="path">Path to file</param>
+        /// <returns>Array of parsed integers</returns>
         public static int[] ParseIntFromFile(string path)
         {
             string[] intLines;
@@ -38,6 +44,11 @@ namespace Task5.Logic
 
     public class RandomFill
     {
+        /// <summary>
+        /// Fill array with random numbers
+        /// </summary>
+        /// <param name="array">Array to fill</param>
+        /// <param name="maxRandomValue">Max of random value</param>
         public static void FillArray(int[] array, int maxRandomValue)
         {
             if (array == null)

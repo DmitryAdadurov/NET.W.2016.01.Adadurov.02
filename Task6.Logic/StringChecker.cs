@@ -8,6 +8,11 @@ namespace Task6.Logic
 {
     public class StringChecker
     {
+        /// <summary>
+        /// Removes repeting characters from the string
+        /// </summary>
+        /// <param name="str">String with repeated characters</param>
+        /// <returns>String without repeated characters</returns>
         public static string RemoveRepeatedCharacters(string str)
         {
 
@@ -21,6 +26,12 @@ namespace Task6.Logic
             return SortCharsInString(sb.ToString());
         }
 
+
+        /// <summary>
+        /// Sort chars in the string
+        /// </summary>
+        /// <param name="str">String with chars to sort</param>
+        /// <returns>String with sorted characters</returns>
         public static string SortCharsInString(string str)
         {
             StringBuilder sb = new StringBuilder(str);
