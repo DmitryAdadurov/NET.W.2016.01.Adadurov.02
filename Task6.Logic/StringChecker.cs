@@ -15,12 +15,20 @@ namespace Task6.Logic
         /// <returns>String without repeated characters</returns>
         public static string RemoveRepeatedCharacters(string str)
         {
+            if (str == null)
+                throw new ArgumentNullException();
+
+            if (str == String.Empty)
+                return String.Empty;
 
             StringBuilder sb = new StringBuilder(str.Length);
 
             foreach (var item in str.ToArray().GroupBy(t => t))
             {
-                sb.Append(item.Key);
+                if (item.Key <= 'z' && item.Key >= 'a')
+                {
+                    sb.Append(item.Key);
+                }
             }
 
             return SortCharsInString(sb.ToString());

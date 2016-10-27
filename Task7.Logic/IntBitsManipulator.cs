@@ -20,6 +20,15 @@ namespace Task7.Logic
         /// <returns>Resulting integer</returns>
         public static int BitInsertion(int num1, int num2, int i, int j)
         {
+            if (i < 0)
+                throw new ArgumentOutOfRangeException();
+
+            if (j < 0)
+                throw new ArgumentOutOfRangeException();
+
+            if (j < i)
+                throw new ArgumentException();
+
             BitArray b1 = new BitArray(BitConverter.GetBytes(num1));
             BitArray b2 = new BitArray(BitConverter.GetBytes(num2));
 

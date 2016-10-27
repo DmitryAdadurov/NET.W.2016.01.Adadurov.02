@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestCases>
+  <TestCase>
+    <array>1 2 3 4 3 2 1</array>
+    <ExpectedResult>3</ExpectedResult>
+  </TestCase>
+  <TestCase>
+    <array>1 100 50 -51 1 1</array>
+    <ExpectedResult>1</ExpectedResult>
+  </TestCase>
+</TestCases>
